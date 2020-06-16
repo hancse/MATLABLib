@@ -1,0 +1,1 @@
+% Rounds a number(vector) to a specified number of decimal places% Format is roundoff(number,decimal_places)	function y = roundoff(number,decimal_places)		decimals = 10.^decimal_places;		y = fix(decimals * number + 0.5)./decimals;

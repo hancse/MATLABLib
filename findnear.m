@@ -1,0 +1,1 @@
+% In the array A find the element with value closest to the value b % Syntax [value,pos] = findnear(A,b) function [value,pos] = findnear(A,b)	  dist = abs(A-b);	  [pos(1),pos(2)] = find(dist == repmat(min(dist(:)),size(dist)));	% The minimum of the distance vector	  value = A(pos(1),pos(2));
